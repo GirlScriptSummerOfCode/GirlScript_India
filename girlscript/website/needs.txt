@@ -1,0 +1,11 @@
+These all things are required for the main website(backend models)
+1)Positions of all chapters on the map
+2)Events section. Past and upcoming can be easily segregated
+3)Testimonial section
+4)Admin Panel
+5)Login Logout
+6)FAQ
+7)Sponsor section
+8)Swag and merchandise purchase section(django girls have a different portal for it)
+9)Chat room sort of thing
+10)Blog(django girls again have a different portal)
