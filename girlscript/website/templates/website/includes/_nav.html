@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navy">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
         <img src="http://girlscript.tech/assets/images/whatsapp-image-2018-03-19-at-11.18.26-am-1280x1280.jpg" alt="Logo" style="width:40px;">
     </a>
 
@@ -11,22 +11,22 @@
 
         <ul class="navbar-nav ml-auto">
             <li class="nav-item" id="blog">
-                <a class="nav-link" href="/blogs/">Blog</a>
+                <a class="nav-link" href="#">Blog</a>
             </li>
             <li class="nav-item" id="about">
-                <a class="nav-link" href="/about/">About Us</a>
+                <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item" id="team">
-                <a class="nav-link" href="/team/">Team</a>
+                <a class="nav-link" href="#">Team</a>
             </li>
             <li class="nav-item" id="team">
-                <a class="nav-link" href="/events/">Events</a>
+                <a class="nav-link" href="#">Events</a>
             </li>
             <li class="nav-item" id="Sponsors">
-                <a class="nav-link" href="/sponsors/">Sponsors</a>
+                <a class="nav-link" href="#">Sponsors</a>
             </li>
             <li class="nav-item" id="contactus">
-                <a class="nav-link" onclick="gotoContact()">Contact Us</a>
+                <a class="nav-link">Contact Us</a>
             </li>
             <li class="nav-item" id="Donate">
                 <a class="nav-link" onclick="Donate">Donate</a>
@@ -35,3 +35,40 @@
 
     </div>
 </nav>
+<script type="text/javascript">
+    let win = $(window);
+    let nav = $('.navbar');
+    let cov = $('.cover');
+
+    let shiftY = cov.height() - nav.height();
+
+    let scrollHandler = {
+        allow: true,
+        reallow: function () {
+            scrollHandler.allow = true;
+        },
+        delay: 200
+    }
+
+    function checkScroll() {
+        console.log('op');
+
+        if (win.scrollTop() > shiftY) {
+            nav.removeClass('transparent');
+        }
+        else {
+            nav.addClass('transparent');
+        }
+    }
+
+    checkScroll();
+    if (cov.length > 0) {
+        win.on("scroll load resize", function () {
+            if (scrollHandler.allow) {
+                checkScroll();
+                scrollHandler.allow = false;
+                setTimeout(scrollHandler.reallow, scrollHandler.delay);
+            }
+        });
+    }
+</script>

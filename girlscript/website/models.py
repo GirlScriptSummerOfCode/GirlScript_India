@@ -13,7 +13,9 @@ class Positions(models.Model):
 class Events(models.Model):
     event_id = models.IntegerField(primary_key=True)
     event_name = models.CharField(null=False,max_length=250)
+    description = models.TextField(null=False)
     summary = models.TextField(null=False)
+    featured_image = models.TextField(null=False)
     start_date = models.DateTimeField('start date')
     end_date = models.DateTimeField('end date')
 

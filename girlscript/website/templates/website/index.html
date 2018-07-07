@@ -1,6 +1,48 @@
 {% extends "website/wrapper.html" %}
+{% block nav %} {% include "website/includes/_nav.html" %} {% endblock %}
 
 {% block body %}
-<h1>please work</h1>
-<h1>please please work</h1>
-{% endblock body %}
+{% include "website/includes/cover.html" %}
+{% include "website/includes/counter.html" %}
+{% include "website/includes/about_us.html" %}
+<div class = "coral">
+    <br>
+    <h1 class ="text-center">
+        Events
+    </h1>
+    <br>
+    <br>
+    <div class ="row">
+        {% for event_obj in events %}
+        <div class = "col-md-4 col-sm-12 col-xs-12" style="margin-bottom:2em">
+            <div class="card">
+                <img class="card-img-top" src="{{event_obj.featured_image}}" alt="{{event_obj.event_name}}">
+                <div class="card-body">
+                    <h4 class="card-title">{{event_obj.event_name}}</h4>
+                    <p class="card-text">{{event_obj.description}}</p>
+                    <p class = "card-text">
+                        <ul>
+                            <li>
+                                Start_Date : {{event_obj.start_date}}
+                            </li>
+                            <li>
+                                End_Date : {{event_obj.end_date}}
+                            </li>
+                        </ul>
+                    </p>
+                    <div class="card-footer">
+                    <button class = "btn btn-success">
+                        <a href="#" class="card-link">Event Link</a>                    
+                    </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        {% endfor %}
+        
+        
+    </div>
+    {% endblock body %}
+    

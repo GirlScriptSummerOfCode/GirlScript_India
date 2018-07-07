@@ -11,18 +11,19 @@
 </head>
 
 <body>
+{% include "website/includes/css.html" %}
     {% block nav %} 
      {% include "website/includes/_nav.html" %}
     {% endblock %}
-    <div class="container">
+    
         {% block body %} 
         {% endblock %}
-    </div>
+    
     {% block foot %}
     {% include "website/includes/_foot.html" %}
     {% endblock %}
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    {% include "website/includes/js.html" %}
 </body>
