@@ -27,11 +27,13 @@
       </div>
         <ul class="nav navbar-nav main-navigation">
           <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#why">why</a></li>
-          <li><a href="#screenshot">Screenshots</a></li>
-          <li><a href="#testimonial">Testimonial</a></li>
-          <li><a href="#clients">Contact</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#why">Why GirlScript?</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#cta">Sign Up</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#testimonial">Testimonials</a></li>
+          <li><a href="#map">Where are we?</a></li>
         </ul>
         <button class="close-button" id="close-button">Close Menu</button>
     </div>
@@ -57,7 +59,7 @@
           <h1 class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Help GirlScript India, in making CODE better</h1>
           <p class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Your contribution HELPS US IN TEACHING PEOPLE TO BE BETTER DEVELOPERS</p>
           <a href="#donate" class="btn btn-lg btn-primary wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Donate Now</a>
-          <a href="#features" class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Learn More</a>
+          <a href="#why" class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Learn More</a>
         </div>   
     </header>
 
@@ -69,9 +71,17 @@
         </div>
 
           <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="650ms">
-           <a href="#" target="_blank">
+           <!-- <a href="#" target="_blank">
             <img src="img/PayPal-Donate-Button.png">
-          </a>
+          </a> -->
+
+          <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="2DMTTW4ZVMLPL">
+            <input type="image" src="https://www.sandbox.paypal.com/en_GB/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            
 
           </div>
        
@@ -92,12 +102,67 @@
       </div>
     </section>
 
+    <section id="why" class="section">
+      <div class="container">
+        
+        <div class="row">     
+
+          <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <img src="img/features/img_1.png" alt="">
+          </div>
+
+          <div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="pull-left content">
+              <h2>What makes us <br> Different</h2>
+              <br />
+              <ul class="list-item">
+                <li><i class="mdi-action-done"></i>Credible Mentors</li>
+                <li><i class="mdi-action-done"></i>Huge Contributor Network</li>
+                <li><i class="mdi-action-done"></i>Strong Industry Support and Sponsorship</li>
+                <li><i class="mdi-action-done"></i>Open Source</li>
+                <li><i class="mdi-action-done"></i>Innovation at Core</li>
+              </ul>
+              <a href="#donate" class="btn btn-lg btn-primary">Donate Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section id="cta">
       <div class="container">
         <div class="row text-center">         
             <h3 class="title-small wow bounce" data-wow-duration="1000ms" data-wow-delay="300ms">Join Us Today and Be a Part of the Change</h3>
              <a href="javascript:void(0)" class="btn btn-lg btn-border">Sign Up</a>
           </div>
+      </div>
+    </section>
+
+    <section id="story" class="section main-feature-gray">
+      <div class="container">
+
+        <div class="row">   
+          <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="feature-item">
+              <h3 class="title-small">
+                Story Behind the Disrupt
+              </h3>
+              <p>
+                GirlScript Foundation is non-for-profit organization that promotes diversity in technology and helps beginners to excel. It works by establishing ‘GirlScript Chapters’ in different cities of India and helping students to be a part of fastest growing tech community and reserves 65% of seats for women.
+              </p>
+              <p>
+                It started in 2017 and within an year of its establishment, GirlScript is working in 14 cities of India and taught more than 3000 girls to begin their coding journey. GirlScript started as a project has been selected by Mozilla under Open Leadership program out of 51 open-source projects worldwide.The main motto of GirlScript is not only to encourage gender equality in technical sector but also to help all the beginner in technology who are clueless at the starting phase of their education.
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <img src="img/features/fet1.png" class="img-responsive" alt="">
+          </div>  
+
+        </div>
+
       </div>
     </section>
 
@@ -199,7 +264,7 @@
     </section>
 
 
-    <section id="clients" class="section">
+    <section id="media" class="section">
       <div class="container">
         
         <div class="section-header text-center">
@@ -231,7 +296,7 @@
       </div>
     </section>
 
-    <div class="map-area">      
+    <div id="map" class="map-area">      
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.398755875142!2d79.05860951450688!3d21.136523585940047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c063c51df55d%3A0xd65f5e901fa9ef76!2sGirlscript+Foundation!5e0!3m2!1sfr!2sin!4v1530854871116" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>    
       </div>
@@ -251,38 +316,37 @@
             <div class="col-md-3 col-sm-6 col-xs-12">
               <h3>FAQs</h3>
               <ul>
-                <li><a href="#">Why choose us?</a>
+                <li><a href="#">Question?</a>
                 </li>
-                <li><a href="#">Where we are?</a>
+                <li><a href="#">Question?</a>
                 </li>
-                <li><a href="#">Fees</a>
+                <li><a href="#">Question?</a>
                 </li>
-                <li><a href="#">Guarantee</a>
+                <li><a href="#">Question?</a>
                 </li>
-                <li><a href="#">Discount</a>
+                <li><a href="#">Question?</a>
                 </li>
               </ul>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
               <h3>About</h3>
               <ul>
-                <li><a href="#">Career</a>
+                <li><a href="#">Link</a>
                 </li>
-                <li><a href="#">Partners</a>
+                <li><a href="#">Link</a>
                 </li>
-                <li><a href="#">Team</a>
+                <li><a href="#">Link</a>
                 </li>
-                <li><a href="#">Clients</a>
+                <li><a href="#">Link</a>
                 </li>
-                <li><a href="#">Contact</a>
+                <li><a href="#">Link</a>
                 </li>
               </ul>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
               <h3>Find us on</h3>
-              <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-              <a class="social" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+              <a class="social" href="https://www.facebook.com/Girlscript/" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a class="social" href="https://twitter.com/Girlscript1" target="_blank"><i class="fa fa-twitter"></i></a>
             </div>
           </div>
         </div>  

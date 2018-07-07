@@ -57,7 +57,8 @@ a:focus {
 }
 .title-small {
   font-size: 38px;
-  color: #3f51b5;
+  color: #e44c25;
+  font-weight: bold;
   margin-bottom: 30px;
   line-height: 50px;
 }
