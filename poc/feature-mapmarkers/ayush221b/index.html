@@ -19,17 +19,18 @@
 </head>
 
 <body>
-    <div id="mapid" style="height: 600px;">
+    <div id="map" style="height: 600px;">
         <script>
             console.log(chapters);
 
-            var mymap = L.map('mapid').setView([20.5937, 78.9629], 5);
-            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                maxZoom: 18,
-                id: 'mapbox.streets',
-                accessToken: 'pk.eyJ1IjoiYXl1c2gyMjFiIiwiYSI6ImNqamVsdXVsYzA1dzkzd214dDhpcGRnNDIifQ.jumKdFfjJ0koYE59_DZF4g'
-            }).addTo(mymap);
+            var mymap = L.map('map', {
+   						 center: [20.5937, 78.9629],
+    					 zoom: 5
+						});
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+		    }).addTo(mymap);
+
 
             var markers = chapters.map(chapter => {
                 return (L.marker([Number(chapter.latitude), Number(chapter.longitude)]).addTo(
