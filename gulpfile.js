@@ -25,7 +25,7 @@ gulp.task('serve',function () {
         server: "./public"
     });
     // gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss','public/assets/scss/main.scss'],['sass']);
-    gulp.watch('public/*.html').on('change',browserSync.reload);
+    gulp.watch('public/canvas.html').on('change',browserSync.reload);
 });
 
 gulp.task('default',['serve']);
