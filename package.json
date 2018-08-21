@@ -1,0 +1,12 @@
+{
+    "name":"girlscript_india",
+    "version":"1.0.0",
+    "scripts":{
+        "start":"node server.js"
+    },
+    "dependencies":{
+        "expfress":"4.13.3"
+    },
+    "auther":"Samyak Jain",
+    "license":"ISC"
+}
