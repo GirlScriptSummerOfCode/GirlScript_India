@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Girlscript Foundation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Leaflet Integration-->
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+                crossorigin="" />
+            <!-- Make sure you put this AFTER Leaflet's CSS -->
+            <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+                crossorigin=""></script>
+
+            <script src="chapterMapConfig.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="img">
+    <nav class="navbar navbar-custom navbar-nav navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        	<div class="row">
+        		<div class="col-md-4">
+        			<div class="navbar-header">
+        				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#robust">
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        				</button>
+        				<a href="" class="navbar-brand">Girlscript India</a>
+        			</div>
+        		</div>        	    
+        		<div class="col-md-8">
+        			<div class="collapse navbar-collapse" id="robust">
+        				<ul class="nav navbar-nav">
+        					<li><a href="#events">EVENTS</a></li>
+        					<li><a href="">ORGANIZE</a></li>
+        					<li><a href="#sponsor">SPONSORS</a></li>
+        					<li><a href="#donate navbar-nav navbar-default">DONATE</a></li>
+        				</ul>
+        			</div>
+        		</div>
+        	</div>
+        </nav>
+
+        <div class="container-fluid text-white text-center headerset">
+        	<h1>Welcome To GirlScript Foundation !</h1><br>
+        	<h2>GirlScript Foundation is non-for-profit organization that promotes diversity in technology and helps beginners to excel. It works by establishing GirlScript Chapters’ in different cities of India and helping students to be a part of fastest growing tech community and reserves 65% of seats for women. It started inb2017 and within an year of its establishment, GirlScript is working in 14 cities of India and taught more than 3000 girls to begin their coding journey.
+           </h2>
+        </div>
+    </div>
+
+    <!--        Events    -->
+        <section class="container-fluid events text-center" id="events">
+        	<h1>Come Participate in Our Events</h1><br>
+        	<div class="row">
+        	<div id="map" style="height: 800px; width :100% text-center">
+        <script>
+            console.log(chapters);
+
+            var mymap = L.map('map', {
+   						 center: [20.5937, 78.9629],
+    					 zoom: 5
+						});
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+		    }).addTo(mymap);
+
+
+            var markers = chapters.map(chapter => {
+                return (L.marker([Number(chapter.latitude), Number(chapter.longitude)]).addTo(
+                            mymap)
+                        .bindTooltip(`${chapter.city} GirlSCript`).openTooltip())
+                        .on('click', () => {
+                            window.open(chapter.website)
+                        });
+            })
+        </script>
+    </div>
+</div>
+        </section>
+
+        <!--            donate    -->
+        <div class="backside">
+        <section id="donate navbar-nav navbar-default" class="section">
+      <div class="container-fluid text-center">
+        <div class="section-header">
+          <h1 class="section-title wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="100ms">Donate Now</h1>
+          <h2 class="section-subtitle wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Make your Contribution</h2>
+        </div><br>
+
+          <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="650ms">
+           <!-- <a href="#" target="_blank">
+            <img src="img/PayPal-Donate-Button.png">
+          </a> -->
+
+          <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="2DMTTW4ZVMLPL">
+            <input type="image" src="https://www.sandbox.paypal.com/en_GB/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            
+
+          </div>
+       
+          <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="750ms">
+            <a href="https://www.instamojo.com/@ayusherl/" rel="im-checkout" data-behaviour="remote" data-style="light" data-text="Donate via Instamojo"></a>
+            <script src="https://js.instamojo.com/v1/button.js"></script>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="850ms"
+            >
+            
+            <a href="https://www.patreon.com/ayushshekhar" target="_blank">
+            <img src="img/become_a_patron_button.jpg">
+            </a>
+
+          </div>   
+        </div>
+      </div>
+    </section>
+</div>
+
+<!--     footer   -->
+
+<footer class="footer">
+            <div class="container-fluid">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-auto ml-lg-auto">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <ul class="list-inline list-inline-dots mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="./join.html">Join Us</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="./faq.html">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+                        Copyright © 2018 GirlScript India | All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Bootsrap Faster Load -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
