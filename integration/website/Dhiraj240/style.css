@@ -1,0 +1,50 @@
+.img{
+	background-image : url('img/gh.jpg');
+	background-size:100% 100%;
+	background-attachment: fixed; 
+	width:100%;
+	height:500px;
+}
+.headerset{
+	padding-top: 65px;
+	box-sizing: border-box;
+	color:white;
+
+}
+.events{
+	padding: 100px 0px 40px;
+	font-weight: bold;
+}
+.donate{
+	padding: 100px 0px 60px;
+}
+.footer{
+	padding:100px 0px 60px;
+	text-align: center;
+}
+.backside{
+	background-image : url('img/gh3.jpg');
+	background-size:100% 100%;
+	background-attachment: fixed; 
+	width:100%;
+	height:200px;
+	color: white;
+	font-weight:bold;
+
+}
+.container{
+	box-sizing:border-box;
+	}
+.navbar-custom{
+	background-color: white;
+	}
+.navbar-custom .navbar-brand{
+    color: orange;
+    font-size: 30px;
+}
+.navbar-custom .navbar-nav>li>a {
+	color: orange;
+	font-size: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
