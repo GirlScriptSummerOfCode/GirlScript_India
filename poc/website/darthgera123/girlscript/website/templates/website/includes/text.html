@@ -1,0 +1,108 @@
+<style type="text/css">
+    .typewriter {
+        border-right: .05em solid;
+        animation: caret 1s steps(1) infinite;
+    }
+
+    @keyframes caret {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .blink {
+        color: white;
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+
+    @keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+
+    @-webkit-keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+</style>
+<div class="col-sm-12 typewritter">
+    <br>
+    <h2 class="l-head headline" id="subtitle">Random quote 1.</h2>
+    <h2>
+        <span class="blink">|</span>
+    </h2>
+    <h2></h2>
+</div>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function (event) {
+
+        var dataText = ["Random quote 1", "Random quote 2", "Random quote 2"];
+
+
+
+        function typeWriter(text, i, fnCallback) {
+
+
+
+            if (i < (text.length)) {
+
+                document.querySelector(".headline").innerHTML = text.substring(0, i + 1) /*'<span class="typewriter" aria-hidden="true"></span>';*/
+
+
+                setTimeout(function () {
+                    typeWriter(text, i + 1, fnCallback)
+                }, 100);
+            }
+
+            else if (typeof fnCallback == 'function') {
+
+                setTimeout(fnCallback, 4000);
+            }
+        }
+
+        function StartTextAnimation(i) {
+            if (typeof dataText[i] == 'undefined') {
+
+
+                StartTextAnimation(0);
+
+            }
+
+            if (i < dataText[i].length) {
+
+                typeWriter(dataText[i], 0, function () {
+
+                    function clearText() {
+                        setTimeout(function () {
+                            var foo = $(".headline").html().replace('<span class="typewriter" aria-hidden="true"></span>', "");
+                            if (foo.charAt(foo.length - 1) === ">") {
+                                var newX = foo.substring(0, foo.length - 4);
+                            } else {
+                                var newX = foo.substring(0, foo.length - 1);
+                            }
+                            $(".headline").html(newX/*+'<span class="typewriter" aria-hidden="true"></span>'*/)
+                            if (newX.length > 0) {
+                                clearText();
+                            } else {
+
+                                StartTextAnimation(i + 1);
+                            }
+                        }, 50);
+                    }
+                    setTimeout(function () {
+                        clearText();
+                    }, 400);
+
+
+                });
+            } else {
+            }
+        }
+
+        StartTextAnimation(0);
+
+    });
+</script>

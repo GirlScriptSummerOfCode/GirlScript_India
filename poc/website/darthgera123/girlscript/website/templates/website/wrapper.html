@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>GirlScript India</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}" />
+    
+</head>
+
+<body>
+{% include "website/includes/css.html" %}
+    {% block nav %} 
+     {% include "website/includes/_nav.html" %}
+    {% endblock %}
+    
+        {% block body %} 
+        {% endblock %}
+    
+    {% block foot %}
+    {% include "website/includes/_foot.html" %}
+    {% endblock %}
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    {% include "website/includes/js.html" %}
+</body>
