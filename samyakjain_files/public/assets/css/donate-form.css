@@ -1,0 +1,590 @@
+
+.new-footer
+{
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.912);
+    height: 1100px;
+    z-index: 1;
+    margin-top: -50px;
+    margin-bottom: 0;
+}
+
+.container2
+{
+    text-align: center;
+    overflow: hidden;
+    width: 65px;
+    height: 65px;
+    border-radius: 68px;
+    background-color: white;
+    box-shadow: 0 8px 11px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.08);
+    margin-top: 100px;
+    margin-left: 500px;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.logo-wrapper {
+    background: inherit;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    margin-top: -24px;
+    margin-bottom: 12px;
+    max-height: 96px;
+    max-width: 160px;
+    overflow: hidden;
+    margin-left: -25px;
+    align-content: center;
+    z-index: 5;
+    margin-top: -20px;
+  }
+  
+  .logo {
+    max-height: 80px;
+    z-index:5;
+  }
+ .style
+ {
+     max-width:1024px;
+     margin:auto;
+     position: relative;
+     margin-left: 190px;
+ }
+ a {
+    color: #0070ba;
+}
+.title
+{
+    color: black;
+    font-size: 38px;
+    font-style: cursive;
+    margin-top: 80px;
+    text-align: center;
+    z-index:5;
+    
+}
+.container
+{
+    z-index:10;
+}
+.aboutcharity
+{
+    width:66.66667%;
+    float: left;
+    height:400px;
+   
+}
+
+.col-lg-4 {
+    width: 33.33333333%;
+   
+}
+.col-lg-4 ,.col-md-4 ,.col-xs-4 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: right;
+    margin-right: -30px;
+    margin-top: -764px;
+}
+.col-lg-8 {
+    width: 66.66666667%;
+    
+}
+.col-lg-8, .col-md-8, .col-xs-8
+{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: -75px;
+    margin-top: 40px;
+}
+.row {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+}
+.style{
+    max-width: 1024px;
+    margin: auto;
+    margin-left: 200px;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.panel {
+    width: 100%;
+    height: auto;
+    background: white;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px 30px 30px 30px;
+    line-height: 1.5;
+    font-family: cursive;
+    font-weight: 100;
+}
+.donateButtonsDiv {
+    display: inline-block;
+}
+
+.amountBoxStyling {
+    display: inline-block;
+}
+.btnCustDonateIsActive {
+    background-color: #003087 !important;
+}
+.btnCustDonate {
+    width: 48px;
+    height: 28px;
+    background-color: #009cde !important;
+    border-color: transparent !important;
+    margin-bottom: 5px !important;
+    border-radius: 5px !important;
+    font-family: pp-sans-big-regular;
+    font-size: 17px !important;
+}
+
+.npo-gifts-do-more {
+    margin: 100px auto 30px auto;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+button {
+    overflow: visible;
+}
+button, select {
+    text-transform: none;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    overflow: visible;
+}
+.amountBoxStyling {
+    display: inline-block;
+    float: left;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.css-1fbkudd, [data-css-1fbkudd] {
+    width: auto;
+    min-width: 80px;
+    height: 45px;
+    box-shadow: none;
+    border: 1px solid rgb(212, 217, 220);
+    border-radius: 5px;
+    padding: 0px 0px 0px 13px;
+    font-family: pp-sans-small-light;
+    font-size: 13px;
+}
+::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.css-63mzzy, [data-css-63mzzy] {
+    margin: 10px 0px;
+    font-size: 0.8em;
+    text-align: left;
+}
+.hub_checkbox, .hub_radio {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+}
+.hub_checkbox input, .hub_radio input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.vx_small-text {
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: -1px;
+}
+.hub_checkbox label::before, .hub_radio label::before {
+    font-family: 'paypal-vx-icons';
+    display: inline-block;
+    vertical-align: top;
+    height: 1.25em;
+    width: 1.25em;
+    margin: 0 10px 0 0;
+    padding: 0.4em 0.1em;
+    border: 1px solid #d4d9dc;
+    content: '';
+    font-size: 17px;
+    line-height: 0;
+    border-radius: 3px;
+}
+
+.css-1uogh3w, [data-css-1uogh3w] {
+    width: auto;
+    min-width: 51%;
+    height: 35px;
+    outline: currentcolor none medium;
+    margin: 10px 0px 15px;
+    border-radius: 45px;
+}
+.css-1otj9os, [data-css-1otj9os] {
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-top: 1px solid rgb(226, 232, 236);
+}
+.css-1nv5il4, [data-css-1nv5il4] {
+    list-style-type: disc;
+    text-align: left;
+    font-family: pp-sans-small-regular;
+    font-size: 13px;
+}
+.css-jiw7ow, [data-css-jiw7ow] {
+    margin: 10px 0px;
+}
+.css-jiw7ow, [data-css-jiw7ow] {
+    margin: 10px 0px;
+}
+.paypalhelp
+{
+    box-sizing: inherit;
+}
+
+   .share {
+
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+height: 53px;
+
+}
+
+.share ul {
+
+padding: 0;
+text-align: center;
+margin: 0;
+
+}
+.share ul li.facebook {
+
+background: url('https://www.paypalobjects.com/images/Cause/facebook.svg') 16px 10px no-repeat;
+    background-size: auto auto;
+background-size: 15px 28px;
+cursor: pointer;
+
+}
+.share ul li {
+
+list-style-type: none;
+display: inline-block;
+text-indent: -10000px;
+width: 45px;
+height: 50px;
+
+}
+.share ul li a {
+
+padding: 10px;
+width: 50px;
+height: 50px;
+display: block;
+outline: none;
+
+}
+.share ul li.twitter {
+
+background: url('https://www.paypalobjects.com/images/Cause/twitter.svg') 12px 15px no-repeat;
+    background-size: auto auto;
+background-size: 25px 21px;
+
+}
+.share ul li {
+
+list-style-type: none;
+display: inline-block;
+text-indent: -10000px;
+width: 45px;
+height: 50px;
+
+}
+.vx_h5 {
+
+font-size: 15px;
+line-height: 21px;
+font-weight: 700;
+text-transform: none;
+font-family: 'HelveticaNeue-Bold', 'Helvetica Neue Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+.share ul li.email {
+
+background: url('https://www.paypalobjects.com/images/Cause/email.svg') 11px 15px no-repeat;
+    background-size: auto auto;
+background-size: 26px 19px;
+
+}
+.share {
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 53px;
+    
+    }
+    .share ul {
+    
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    
+    }
+    .share ul li.facebook {
+    
+    background: url('https://www.paypalobjects.com/images/Cause/facebook.svg') 16px 10px no-repeat;
+        background-size: auto auto;
+    background-size: 15px 28px;
+    cursor: pointer;
+    
+    }
+    .share ul li {
+    
+    list-style-type: none;
+    display: inline-block;
+    text-indent: -10000px;
+    width: 45px;
+    height: 50px;
+    
+    }
+    .share ul li a {
+    
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    outline: none;
+    
+    }
+    .share ul li.twitter {
+    
+    background: url('https://www.paypalobjects.com/images/Cause/twitter.svg') 12px 15px no-repeat;
+        background-size: auto auto;
+    background-size: 25px 21px;
+    
+    }
+    .share ul li {
+    
+    list-style-type: none;
+    display: inline-block;
+    text-indent: -10000px;
+    width: 45px;
+    height: 50px;
+    
+    }
+    .vx_h5 {
+    
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: none;
+    font-family: 'HelveticaNeue-Bold', 'Helvetica Neue Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+    }
+    .share ul li.email {
+    
+    background: url('https://www.paypalobjects.com/images/Cause/email.svg') 11px 15px no-repeat;
+        background-size: auto auto;
+    background-size: 26px 19px;
+    
+    }
+    .npo-gifts-do-more {
+        margin-left: -800px;
+        margin-right: -170px;
+    }
+    .row {
+        margin-left: -0.9375rem;
+        margin-right: -0.9375rem;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+    .col-md-12 {
+        float: left;
+    }
+    .col-md-12 {
+        position: relative;
+        min-height: 1px;
+        padding-left: .9375rem;
+        padding-right: .9375rem;
+    }
+    .global-footer .footer-search {
+        float: left;
+    }
+    .global-footer li {
+        display: inline-block;
+    }
+    li {
+        line-height: 21px;
+    }
+    .global-footer .footer-main .footer-search .search-icon {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAFR2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTIgMS4xNDk2MDIsIDIwMTIvMTAvMTAtMTg6MTA6MjQgICAgICAgICI+CiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczpkYW09Imh0dHA6Ly93d3cuZGF5LmNvbS9kYW0vMS4wIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczpwcmlzbT0iaHR0cDovL3ByaXNtc3RhbmRhcmQub3JnL25hbWVzcGFjZXMvYmFzaWMvMi4xLyIKICAgIHhtbG5zOlBheVBhbD0id3d3LnBheXBhbC5jb20vYmFzZS92MSIKICAgZGM6Zm9ybWF0PSJpbWFnZS9wbmciCiAgIGRjOm1vZGlmaWVkPSIyMDEzLTEwLTI4VDEyOjEwOjUyLjgyLTA3OjAwIgogICBkYW06c2l6ZT0iNDYzIgogICBkYW06UGh5c2ljYWx3aWR0aGluaW5jaGVzPSItMS4wIgogICBkYW06ZXh0cmFjdGVkPSIyMDEzLTEwLTI4VDEyOjEwOjUxLjk3Ny0wNzowMCIKICAgZGFtOnNoYTE9IjgxYjdmMWM5MWU2MDNiNDhkZWRhNjFhNmVkNGIwOWI0Mzg1M2IxZGIiCiAgIGRhbTpOdW1iZXJvZnRleHR1YWxjb21tZW50cz0iMCIKICAgZGFtOkZpbGVmb3JtYXQ9IlBORyIKICAgZGFtOlByb2dyZXNzaXZlPSJubyIKICAgZGFtOlBoeXNpY2FsaGVpZ2h0aW5kcGk9Ii0xIgogICBkYW06TUlNRXR5cGU9ImltYWdlL3BuZyIKICAgZGFtOk51bWJlcm9maW1hZ2VzPSIxIgogICBkYW06Qml0c3BlcnBpeGVsPSIzMiIKICAgZGFtOlBoeXNpY2FsaGVpZ2h0aW5pbmNoZXM9Ii0xLjAiCiAgIGRhbTpQaHlzaWNhbHdpZHRoaW5kcGk9Ii0xIgogICB0aWZmOkltYWdlTGVuZ3RoPSIyOCIKICAgdGlmZjpJbWFnZVdpZHRoPSIyOCIKICAgcHJpc206ZXhwaXJhdGlvbkRhdGU9IjIwMTgtMTEtMTJUMDE6MzAtMDg6MDAiCiAgIFBheVBhbDpzdGF0dXM9IlNvdXJjZUFwcHJvdmVkIgogICBQYXlQYWw6c291cmNlTm9kZVBhdGg9Ii9jb250ZW50L2RhbS9QYXlQYWxEaWdpdGFsQXNzZXRzL3NwYXJ0YUltYWdlcy9HbG9iYWxJbWFnZXMvbWt0Zy8yMDE0ZGVzaWduL3NlYXJjaF9nbGFzc19sYXJnZTJ4LnBuZyIKICAgUGF5UGFsOmlzU291cmNlPSJ0cnVlIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+1D5OBAAAAZZJREFUeNq11L8rhHEAx/GH5+RHiEkiAwbluM2/QCgRi8WiG00Gi8GvVUo2DKKblPWy+BEpZfDrZLhSUgy67kJxebyHG/QZvs/3eeoZXsv5fr7v+8lJJpN+XDQjUdIAJyzTH4dwgDw8cYVFNIUJqgTO4FkoYAEVYYPj+IIX0AkagwaHUYQHlUEap8jBg7pApW2wBe9yQRHraJNRDCO4g0bXbIM7MvxAv8+4BvvQJ9ntF2zGjwwn4ViowqVst/yC0zI4ghNAn+xzcE3BPRlMwQkoI3f0moLHcrgzRHBb7hg1Ba/lcGOI4Kp+B0zBczkcDxFMyR0DpuCmHJ4JGCvHq9zRbgpOyOFHxAIEx2X/5PezqEdBRiuWsRY8y3bJ5j/Nsox+MY8yw7gDt/BECq5fsBYP0PE5xlD3b9SDZXlX1J5EJQh0481wSR7f+rh9VINAHFkdq6BRDaoGbFi+mnu82EY1qFoxh0Nk8YkcbrCFQZSjyyK6C1eC4QWJyjDy6KyMIo2mUS2DiKKlmHyGEUQlJsFIojsoxYA/UaC7EdMjt6gAAAAASUVORK5CYII=');
+        background-repeat: no-repeat;
+        background-position: left 0;
+        background-size: 16px 16px;
+        text-indent: -999em;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        min-width: 0;
+        margin: 0;
+            margin-top: 0px;
+        margin-top: 4px;
+    }
+    .global-footer .footer-search .search-icon {
+        margin: 3px 5px 0 0;
+        overflow: hidden;
+    }
+    .global-footer .footer-main a, .global-footer .footer-secondary a, .global-footer .footer-tertiary a {
+        font-family: pp-sans-small-medium,Helvetica Neue,Arial,sans-serif;
+    }
+    .global-footer .footer-main a {
+        color: #2c2e2f;
+    }
+    .global-footer .footer-main .country-selector {
+        margin: 5px 18px 5px 0;
+            margin-right: 18px;
+    }
+    .global-footer .footer-main li {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .global-footer .footer-main li, .global-footer .footer-secondary li, .global-footer .footer-tertiary li {
+        margin: 6px 18px 2px 0;
+    }
+    .global-footer .country-selector {
+        float: right;
+    }
+    .global-footer li {
+        display: inline-block;
+    }
+    li {
+        line-height: 21px;
+    }
+    .country-selector .country {
+        display: inline-block;
+        overflow: hidden;
+        width: 32px;
+        height: 26px;
+        padding: 0;
+        margin: 0;
+        vertical-align: middle;
+        text-indent: -999em;
+        text-align: left;
+        background-color: transparent;
+        background-repeat: no-repeat;
+    }
+    a {
+        color: #0070ba;
+    }
+    a {
+        background-color: transparent;
+        text-decoration: none;
+        font-weight: normal;
+        font-family: 'pp-sans-small-medium',Helvetica Neue,Arial,sans-serif;
+    }
+    .global-footer .footer-secondary, .global-footer .footer-tertiary {
+        font-size: 13px;
+        font-size: .86666667rem;
+        color: #6c7378;
+        padding-top: 10px;
+    }
+    .global-footer .footer-main, .global-footer .footer-secondary, .global-footer .footer-tertiary {
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+    .global-footer ul {
+        margin: 0;
+            margin-bottom: 0px;
+    }
+    .global-footer {
+        padding: 60px 0;
+    }
+    ul, ol {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0 0 1rem;
+    }
+    ul, ol {
+        padding: 0;
+            padding-top: 0px;
+            padding-left: 0px;
+        margin: 0 0 10.5px 25px;
+    }
+    ul, ol {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .country-selector .country {
+        display: inline-block;
+        overflow: hidden;
+        width: 32px;
+        height: 26px;
+        padding: 0;
+        margin: 0;
+        vertical-align: middle;
+        text-indent: -999em;
+        text-align: left;
+        background-color: transparent;
+        background-repeat: no-repeat;
+    }
+    li {
+        line-height: 21px;
+    }
+    #paypaldonate
+    {
+        margin-top: 20px;
+    }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Girlscript-Home_Page</title>
+
+    <!-- Shortcut Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- SEO tags -->
+    <meta name="description" content="The Official website of Girlscript_India">
+    <meta name="keywords" content="Non-profit Organization-Girlscript">
+
+    <!-- itemprop global attribute -->
+    <meta itemprop="name" content="JeevanRakht">
+    <meta itemprop="description" content="Girlscript is a Official Non-profit Organization web app">
+    <meta itemprop="image" content="https://girlscript_india.herokuapp.com/assets/images/favicon.png">
+
+    <!-- Open Graph protocol markup -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Girlscript">
+    <meta property="og:image" content="https://girlscript_india.herokuapp.com/assets/images/favicon.png">
+    <meta property="og:description" content="Girlscript is a Official Non-profit Organization web app">
+    <meta property="og:site_name" content="Girlscript">
+    <meta property="og:url" content="https://girlscript.herokuapp.com/">
+
+    <!--GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Spectral:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+
+    <!-- Flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body id="particles-js" m-md-3="">
+    <div class="vh-100 d-flex flex-column justify-content-between">
+
+        <header class="container">
+            <div class="header-content text-center">
+
+                <a href="/" class="logo-wrapper zi-1">
+                    <img src="assets/images/gslogo.png" alt="" class="logo">
+                </a>
+
+        
+                <a href="/login" class="login-btn zi-1">
+                    <i class="fas fa-lock"></i>
+                    <span>Login</span>
+                </a>
+               
+            </div>
+        </header>   
+        <div class="container2">
+            <h1>Girlscript_India</h1>
+            <h2>Girlscript is a Non-profit Government Organization which works for the upliftment of women in technical sector</h2>
+        </div>
+        <div id="gsvideo">
+                <iframe  src="https://www.youtube.com/embed/sYWoqw0hdsQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+             <main class="options-wrapper d-flex flex-wrap justify-content-center mt-4 mb-5">
+            <div class="option mx-4 zi-1">
+                <a href="canvas.html" class="option-btn">
+                    <div class="option-label">
+                        <strong>Know</strong> More
+                    </div>
+                </a>
+            </div>
+            <!-- End Option -->
+        </main>
+
+        <footer class="app-footer">
+            <div class="footer-content d-flex justify-content-around align-items-center zi-1">
+                <a class="footer-link" href="tel:+919999999999">+91-7000082136</a>
+
+                <span class="footer-dot">>></span>
+                <span class="footer-dot"><<</span>
+
+                <a class="footer-link" href="mailto:mail@jeevanrakht.in">contact@girlscript.tech</a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- End Container -->
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Particles JS-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script type="text/javascript">
+    particlesJS("particles-js", {"particles":{"number":{"value":60,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":4},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.48927926008349276,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":2,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.14994041841268327,"width":1.5783201938177185},"move":{"enable":true,"speed":6,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance": 203.7831747021169,"size":40,"duration":2,"opacity": 0.46135167948199124,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":false});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+    </script>
+    <!-- Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>  
+
+    <!-- Typeahead -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+
+    <!-- Main JS file -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Tween JS for error page-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script>
+       
+    $(window).resize(function() {
+    $('#gsvideo').height($(window).height() -100);
+    $('#gsvideo').width($(window).width() -100);
+});
+$( '#gsvideo' ).on( 'click', function() {
+            $(window).trigger('resize');
+    });
+
+    </script>
+
+
+<canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1349" height="162"></canvas>
+</body>
+</html>
