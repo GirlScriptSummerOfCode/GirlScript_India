@@ -1,0 +1,24 @@
+.content
+{
+    background-color: white;
+    z-index: -1;
+    height: 1080px;
+}
+.content h1{
+    color: rgb(255, 166, 0);
+    font-size: 34px;
+    padding: 60px;
+    z-index:1;
+    float: left;
+}
+#map
+{
+  height: 800px;
+  width: 1000px;
+  margin-left: 170px;
+  margin-right: 140px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 80px;
+  z-index:8;
+}
